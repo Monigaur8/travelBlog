@@ -1,0 +1,2 @@
+# My personal travel diary
+Gaurav Kansal is a Joint Director (IT) at the National Informatics Centre. During his tenure at NIC, he has worked on multiple technologies and handled important projects including National Knowledge Network (NKN), IPv6 implementation across NICNET, Setting up ANYCAST DNS Services, and wireless services across the NICNET. Currently, he is the technical lead of the 1.10.10.10 Public DNS Project for the Indian IP Space, with an aim of improving the cyber posture of the country.
