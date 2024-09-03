@@ -1243,7 +1243,7 @@ section,
 .portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   font-size: 24px;
-  top: 50%;
+  top: 48%;
   left: 48%;
   color: color-mix(in srgb, #fff, transparent 30%);
   transition: 0.3s;
@@ -1727,4 +1727,10 @@ color: #e1dddd;
 .icon-connected{
   position: relative;
   left: 42%;
+}
+.img-width {
+  object-fit: fill;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 310px !important;
 }
