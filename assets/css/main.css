@@ -1353,17 +1353,24 @@ transform-origin: right;
 transition: opacity 500ms ease-in, transform 500ms ease-out;
 transition-delay: 500ms;
 }
-
+.album__button a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: .9rem;
+}
+.album__button a:hover{
+  color: #ffffff;
+}
 .album__button {
-color: #ffffff;
-padding: 0.65em 0.65em;
+
+padding: 0.33em 0.85em;
 width: fit-content;
-font-variant: small-caps;
-font-weight: 500;
 border-radius: 0.45em;
 border: none;
 background-color: rgb(212 185 156);
-font-size: .9rem;
+
 }
 
 .card_album .album__content--container > :not(.album__title),
