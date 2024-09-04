@@ -1361,7 +1361,7 @@ transition-delay: 500ms;
   font-size: .9rem;
 }
 .album__button a:hover{
-  color: #ffffff;
+  color: #fff!important;
 }
 .album__button {
 
