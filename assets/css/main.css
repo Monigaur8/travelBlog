@@ -1021,7 +1021,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# TravelDiaries Section 
 --------------------------------------------------------------*/
 .services .service-item {
   text-align: center;
@@ -1075,7 +1075,7 @@ section,
   --background-color: #000000;
   --default-color: #ffffff;
   --contrast-color: #ffffff;
-  padding: 80px 0;
+  margin: 60px 0;
   position: relative;
   clip-path: inset(0);
 }
@@ -1381,7 +1381,6 @@ transition: opacity 500ms ease-out;
 
 /* Animation for hover items */
 
-@media (hover: hover) {
 .album__content {
 transform: translateY(62%);
 transition: transform 500ms ease-out;
@@ -1437,7 +1436,7 @@ transform-origin: left;
 transition: opacity 500ms ease-in, transform 500ms ease-in;
 transition-delay: 500ms;
 }
-}
+
 
 
 /* BACKGROUND IMAGES */
@@ -1510,81 +1509,10 @@ text-transform: uppercase;
 color: #e1dddd; 
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
 .mt-block{
-  margin: 70px auto;
+  margin: 70px 0px 0px 0px;
 }
 /* gallery */
-
-
-/* .follow {
-  margin: 0 auto;
-  font-family: "Comfortaa", cursive;
-  font-size: 55px;
-  color: #fff;
-  position: relative;
-  z-index: 9;
-} */
 
 #socialName {
   white-space: nowrap;
@@ -1636,8 +1564,6 @@ color: #e1dddd;
 .social-buttons .instagram + .icon-back {
   background: #285aeb;
 }
-
-
 
 /* LinkedIn */
 .social-buttons .linkedin {
@@ -1741,3 +1667,7 @@ color: #e1dddd;
     width: 100%;
     height: 310px !important;
 }
+
+/*--------------------------------------------------------------
+# travel-guides Section
+--------------------------------------------------------------*/
