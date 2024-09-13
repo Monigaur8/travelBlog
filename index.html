@@ -207,6 +207,7 @@
       </div>
     </section><!-- /latestPhotos Section -->
  <!-- TravelDiaries Section -->
+  
  <section class="services section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -220,10 +221,7 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">LBSNAA</h2>
-              <p class="album__description mt-4">
-                The Lal Bahadur Shastri National Academy of Administration (LBSNAA), Mussoorie is a premier training 
-                 
-              </p>
+              <div id="travel_guide_content1" class="album__description mt-4"></div>
             </div>
             <button class="album__button"><a href="travel-guides.html">Read more</a></button>
           </div>
@@ -235,11 +233,8 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">SANOG 41</h2>
-              <p class="album__description mt-4">
-                South Asian Network Operators Group (SANOG) is a regional bi-annual event that brings together network operators, 
-                <!-- Internet service providers, and other technology professionals from South Asia and beyond to share knowledge, 
-                collaborate and discuss key issues related to Internet infrastructure, security, and development. -->
-              </p>
+              <div id="travel_guide_content2" class="album__description mt-4"></div>
+             
             </div>
             <button class="album__button"><a href="travel-guides.html">Read more</a></button>
             
@@ -253,7 +248,7 @@
               <h2 class="album__title">Romania</h2>
               <p class="album__description mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                labore laudantium deserunt fugiat numquam.
+                labore laudantium deserunt fugiat numquam.<span ></span>
               </p>
             </div>
             <button class="album__button"><a href="travel-guides.html">Read more</a></button>
@@ -369,6 +364,7 @@
         </div>
       </div>
     </section><!-- /TravelAction Section -->
+    
   </main>
 
   <div id="travelfooter"></div>
@@ -381,6 +377,7 @@
   <div id="preloader"></div>
 
   <script src="assets/js/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="assets/travel_page_include/travelPages.js" crossorigin="anonymous"></script>
   <script>
     $('#travelhead').load('include/header.html');
     $('#travelfooter').load('include/footer.html'); 
@@ -396,6 +393,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
   <script>
     // timeline JS
     var timelineSwiper = new Swiper('.timeline .swiper-container', {

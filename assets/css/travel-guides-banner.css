@@ -2822,7 +2822,7 @@
       margin: 0rem;
       position: absolute;
       top: 40px;
-      left: -50px;
+      left: -30px;
       height: 100%;
       font-weight: 400;
       z-index: 1;
@@ -2843,7 +2843,7 @@
           right: 0;
           bottom: 0;
           content: '';
-          background: #1a1e24;
+          background: #b1b1b1;
           z-index: -1; }
       @media (max-width: 1199.98px) {
         .travelCarousel div.vr {
