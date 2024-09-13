@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileNavToggleBtn) {
       mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
     } else {
-      console.error('Element with ID mobileNavToggleBtn not found.');
+    //  console.error('Element with ID mobileNavToggleBtn not found.');
     }
   });
 
