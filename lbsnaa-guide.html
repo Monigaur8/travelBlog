@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Gaurav Kansal Adventure Travel Blog</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpg" rel="icon" type="image/png">
+
+    <!-- Main CSS File -->
+
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/themify-icons/themify-icons.css">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='assets/vendor/dist/jquery.fancybox.min.css'>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tooplate-infinite-loop.css" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <link href="assets/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <style>
+        .travel-diary .gallery-section {
+            padding: 60px 0;
+        }
+
+        .travel-diary .gallery-section h2 {
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 1.6em;
+
+        }
+
+        .travel-diary .gallery-section .gallery-box {
+            background: #fff;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            /*grid-template-rows: repeat(1, 18vw);*/
+            grid-auto-rows: 16vw;
+            grid-gap: 1rem;
+            grid-auto-flow: dense;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box {
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+            box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.15);
+            transition: all .5s ease;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box:hover {
+            box-shadow: 0px 4px 40px -4px rgba(0, 0, 0, 0.3);
+        }
+
+        .travel-diary .gallery-section .gallery-box .box.big {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box.horizontal {
+            grid-column: span 2;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box.vertical {
+            grid-row: span 2;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all .5s ease;
+        }
+
+        .travel-diary .gallery-section .gallery-box .box:hover img {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 991px) {
+            .travel-diary .gallery-section .gallery-box {
+                grid-template-columns: repeat(4, auto);
+                grid-auto-rows: 18vw;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .travel-diary .gallery-section .gallery-box {
+                grid-template-columns: repeat(3, auto);
+            }
+        }
+
+        @media (max-width: 575px) {
+            .travel-diary .gallery-section .gallery-box {
+                grid-template-columns: repeat(2, auto);
+                grid-auto-rows: 35vw;
+            }
+        }
+
+        .travel-diary .travel-wrap {
+            width: 350px;
+            position: relative;
+            display: inline-block;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .travel-diary .travel-wrap:before {
+            display: block;
+            content: "";
+            background: rgb(212 185 156 / 38%);
+            width: 220px;
+            height: 50px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 6px / 18px 0;
+            position: absolute;
+            top: -25px;
+            left: 65px;
+            -webkit-transform: rotate(355deg);
+            -moz-transform: rotate(355deg);
+            -o-transform: rotate(355deg);
+            -ms-transform: rotate(355deg);
+            transform: rotate(355deg);
+        }
+
+        .travel-diary .travel-blk {
+            -webkit-transform: rotate(355deg);
+            -moz-transform: rotate(355deg);
+            -o-transform: rotate(355deg);
+            -ms-transform: rotate(355deg);
+            transform: rotate(355deg);
+        }
+    </style>
+</head>
+
+<body class="index-page">
+    <div id="travelhead"></div>
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="hero_bg section">
+            <img src="assets/img/travelImg/lbsnaa/cover-pic.jpeg" alt="">
+        </section><!-- /Hero Section -->
+
+
+        <!-- CityGuides Section -->
+        <section class="services section mt-block travel-diary">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h6 class="sectionHeading-text">Featured Location Guides</h6>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <!-- About Start -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="travel-wrap travel-blk">
+                            <img src="assets/img/travelImg/lbsnaa/lbs.jpeg" class="img-fluid w-100 h-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 class="mb-4" id="travel_guide_heading1">Welcome to <span class="">LBSNAA</span></h1>
+                        <div id="travel_guide_content1"></div>
+                    </div>
+                </div>
+                <!-- About End -->
+                <div class="text-center mb-3 mt-5">
+                    <h2 class="heading-level">
+                        <span class="travel-text2"><span class="textSpan2">Image</span></span>
+                        <span class="travel-text1"><span class="textSpan1">gallery</span></span>
+                    </h2>
+                </div>
+
+                <div class="gallery-section">
+                    <div class="container">
+                        <div class="gallery-box">
+                            <div class="box">
+                                <a href="assets/img/travelImg/lbsnaa/img-01.jpeg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/lbsnaa/img-01.jpeg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box ">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box ">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box ">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box ">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box vertical">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box vertical">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box vertical">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box vertical">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box vertical">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="assets/img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            </button>
+        </section>
+        <!-- /CityGuides Section -->
+
+
+        
+    </main>
+
+    <div id="travelfooter"></div>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <script src="assets/js/jquery.min.js" crossorigin="anonymous"></script>
+    <script>
+        $('#travelhead').load('include/header.html');
+        $('#travelfooter').load('include/footer.html');
+    </script>
+    
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/dist/popper.min.js"></script>
+    <script src='assets/vendor/dist/jquery.fancybox.min.js'></script>
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/travel_page_include/travelPages.js"></script>
+
+</body>
+
+</html>
