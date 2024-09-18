@@ -199,7 +199,7 @@ p{
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--nav-color)!important;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -210,6 +210,7 @@ p{
     white-space: nowrap;
     transition: 0.3s;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .navmenu a i,

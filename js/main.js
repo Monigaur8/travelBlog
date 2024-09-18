@@ -197,3 +197,9 @@ if (mobileNavToggleBtn) {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// link-files js 
+
+function homelinks(lin) {
+  parent.location = lin;
+}
