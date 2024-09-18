@@ -201,5 +201,7 @@ if (mobileNavToggleBtn) {
 // link-files js 
 
 function homelinks(lin) {
+  alert(lin);
   parent.location = lin;
+  alert(parent.location);
 }
