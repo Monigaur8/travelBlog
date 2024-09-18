@@ -202,6 +202,8 @@ if (mobileNavToggleBtn) {
 
 function homelinks(lin) {
   alert(lin);
+  console.log(window.location.pathname);
+  console.log(window.location);
   parent.location = lin;
   alert(parent.location);
 }
