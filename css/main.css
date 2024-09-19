@@ -1676,3 +1676,31 @@ color: #e1dddd;
 	display: none;
 	padding-top: 22px;
 }
+
+/* responsive CSS */
+@media only screen and (min-width:320px) and (max-width:767px){
+  .about_heading h1 {
+    font-size: 20px;
+  }
+  .border-line {
+    width: 100%;
+  }
+  .sectionHeading-text {
+    font-size: 20px;
+  }
+  .portfolio .portfolio-filters li {
+    padding: 8px 10px 10px 10px;
+  }
+  .heading-level .travel-text2 .textSpan2{
+    font-size: 20px;
+  }
+  .heading-level .travel-text1 .textSpan1 {
+    font-size: 50px;
+}
+.subhead p {
+  font-size: 50px;
+}
+  .section-title .travel-text1 .textSpan1 {
+    font-size: 30px;
+  }
+}
