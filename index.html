@@ -22,7 +22,15 @@
 
   <link href="vendor/swiper/swiper.min.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
- 
+ <style>
+   .text-box {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #333;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+ </style>
 </head>
 
 <body class="index-page">
@@ -224,7 +232,7 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">LBSNAA</h2>
-              <div id="travel_guide_content1" class="album__description mt-4"></div>
+              <div id="text-box-1" class="album__description mt-4"></div>
             </div>
             <button class="album__button"><a href="travelGuides/lbsnaa-guide.html">Read more</a></button>
           </div>
@@ -236,10 +244,10 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">SANOG 41</h2>
-              <div id="travel_guide_content2" class="album__description mt-4"></div>           
+              <div id="text-box-2" class="album__description mt-4"></div>      
             </div>
             <button class="album__button"><a href="travelGuides/SANOG-guide.html">Read more</a></button>
-            
+          </div>
         </article>
       </div><!-- End Service Item -->
 
@@ -248,10 +256,7 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">Romania</h2>
-              <p class="album__description mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                labore laudantium deserunt fugiat numquam.<span ></span>
-              </p>
+              <div id="text-box-3" class="album__description mt-4"></div>
             </div>
             <button class="album__button"><a href="travelGuides/travel-guides.html">Read more</a></button>
           </div>
@@ -263,10 +268,7 @@
           <div class="album__content">
             <div class="album__content--container">
               <h2 class="album__title">Fiji</h2>
-              <p class="album__description mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                labore laudantium deserunt fugiat numquam.
-              </p>
+              <div id="text-box-4" class="album__description mt-4"></div>
             </div>
             <button class="album__button"><a href="travel-guides.html">Read more</a></button>
           </div>
@@ -366,9 +368,8 @@
         </div>
       </div>
     </section><!-- /TravelAction Section -->
-    
+   
   </main>
-
   <div id="travelfooter"></div>
 
   <!-- Scroll Top -->
@@ -382,8 +383,9 @@
   <script src="travel_page_include/travelPages.js" crossorigin="anonymous"></script>
   <script>
     $('#travelhead').load('/include/header.html');
-    $('#travelfooter').load('/include/footer.html'); 
-    </script>
+    $('#travelfooter').load('/include/footer.html');    
+  </script>
+
   <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/aos/aos.js"></script>
