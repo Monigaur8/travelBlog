@@ -136,6 +136,20 @@
             -ms-transform: rotate(355deg);
             transform: rotate(355deg);
         }
+
+
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -145,7 +159,7 @@
 
         <!-- Hero Section -->
         <section class="hero_bg section">
-            <img src="../img/travelImg/lbsnaa/cover-pic.jpeg" alt="">
+            <img src="../img/travelImg/lbsnaa/cover-pic.jpeg" alt="" class="myImg">
         </section><!-- /Hero Section -->
 
 
@@ -162,13 +176,27 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5">
                         <div class="travel-wrap travel-blk">
-                            <img src="../img/travelImg/lbsnaa/lbs.jpeg" class="img-fluid w-100 h-100" alt="">
+                            <img src="../img/travelImg/lbsnaa/lbs.jpeg" class="img-fluid w-100 h-100 myImg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <h1 class="mb-4" id="travel_guide_heading1">Welcome to <span class="">LBSNAA</span></h1>
                         <div id="travel_guide_content1"></div>
                     </div>
+                    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
+
                 </div>
                 <!-- About End -->
                 <div class="text-center mb-3 mt-5">
@@ -178,7 +206,10 @@
                     </h2>
                 </div>
 
-                <div class="gallery-section">
+
+                
+
+                 <div class="gallery-section">
                     <div class="container">
                         <div class="gallery-box">
                             <div class="box">
@@ -197,8 +228,8 @@
                                 </a>
                             </div>
                             <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
+                                <a href="../img/travelImg/lbsnaa/img-03.jpeg" data-fancybox="gallery1">
+                                    <img src="../img/travelImg/lbsnaa/img-03.jpeg" class="img-fluid">
                                 </a>
                             </div>
                             <div class="box">
@@ -211,6 +242,12 @@
                                     <img src="../img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
                                 </a>
                             </div>
+                             <div class="box vertical">
+                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
+                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                           
                             <div class="box ">
                                 <a href="../img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
                                     <img src="../img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
@@ -222,11 +259,6 @@
                                 </a>
                             </div>
                             <div class="box">
-                                <a href="assets/../img/travelImg/gallery-1/gallery1-img-01.jpg" data-fancybox="gallery1">
-                                    <img src="assets/../img/travelImg/gallery-1/gallery1-img-01.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
                                 <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
                                     <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
                                 </a>
@@ -236,107 +268,8 @@
                                     <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="box vertical">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box vertical">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box vertical">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box vertical">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box vertical">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-02.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-02.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="../img/travelImg/gallery-1/gallery1-img-03.jpg" data-fancybox="gallery1">
-                                    <img src="../img/travelImg/gallery-1/gallery1-img-03.jpg" class="img-fluid">
-                                </a>
-                            </div>
-
+                           
+                           
                         </div>
 
                     </div>
@@ -380,7 +313,6 @@
     <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Main JS File -->
     <script src="../js/main.js"></script>
-    <!-- <script src="travel_page_include/travelPages.js"></script> -->
 
 </body>
 

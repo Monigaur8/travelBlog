@@ -1,3 +1,4 @@
+// travel guides content update
 
  // An object that holds text for each div
  const textData = {
