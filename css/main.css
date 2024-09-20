@@ -704,7 +704,7 @@ section,
 .hero_bg {
   --background-color: #ad5302;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   position: relative;
 }
 
